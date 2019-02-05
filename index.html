@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Hyperledger</title>
+    <meta name="description" content="2D navigation demo" />
+    <meta name="author" content="Henrik Ingo" />
+    <link href="css/presentation.css" rel="stylesheet" />
+</head>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<!-- Some images that are fixed to background in the css -->
+<img id="interlogica-image" class="bg" src="images/logo-interlogica-col.png">
+
+<div id="impress" data-transition-duration="1000">
+
+    <div id="intro" class="step" data-scale="2" data-x="-500" data-y="-500">
+        <h1>Hyperledger Fabric</h1>
+        <div class="content">
+            <img src="images/hyperledger_logo_white.png" />
+        </div>
+    </div>
+
+    <div id="contents" class="step" data-rel-x="1500" data-rel-y="1500" data-scale="1">
+        <h1>Blockchain</h1>
+
+        <ul>
+            <li>a <span class="highlight">distribuited ledger</span> that records all the transactions that take place on the network</li>
+            <li>
+                <span class="highlight">decentralized</span> - because it is replicated across many network participants, 
+                each of whom <span class="highlight"></span>collaborate</span> in its maintenance</li>
+            <li>
+                <span class="highlight">append-only</span> - using cryptographic techniques that guarantee that once 
+                a transaction has been added to the ledger it cannot be modified
+            </li>
+            <li>
+              blockchain system has shared programs to update shared ledgers. 
+            </li>
+        </ul>
+    </div>
+
+    <!-- Ice cream slides (3) -->
+    <div id="smartcontract" class="step" data-x="2000" data-y="2000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="contents icecream-pro contents crisps">
+        <h1>Smart Contract</h1>
+        <h5>
+            are used in a blockchain network to provide controlled access to the ledger 
+            and to enable a whole host of ledger functions (transacting, querying, etc)
+        </h5>
+        <h5>
+            not only a key mechanism for encapsulating information and keeping it simple across the network, 
+            they can also be written to allow participants to execute certain aspects of transactions automatically
+        </h5>
+
+        <div class="content">
+            <img src="images/AppConceptsOverview_w.png" height="400px"/>
+        </div>
+    </div>
+
+    <div id="consensus" class="step" data-rel-x="0" data-rel-y="1000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="icecream icecream-con applepie crisps-pro">
+        <h1>Consensus</h1>
+
+        <h5>
+          ledgers update only when transactions are approved by the appropriate participants, 
+          and that when ledgers do update, they update with the same transactions in the same order
+        </h5>
+
+        <div class="content">
+            <img src="images/consensus.png" height="400px"/>
+        </div>
+    </div>
+
+
+    <div id="stack" class="step" data-rel-x="0" data-rel-y="1000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="icecream-pro crisps applepie-pro crisps-con">
+        <h1>App stack</h1>
+
+        <div class="content">
+            <img src="images/stack.jpg" height="400px"/>
+        </div>
+    </div>
+
+
+    <!-- Crisps slides (3) -->
+    <div id="devenv" class="step" data-x="3500" data-y="2000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="icecream-con crisps-pro icecream applepie">
+        <h1>App</h1>
+        <h5>app development goes through three principle steps</h5>
+        <ul>
+            <li>Setting up a development environment</li>
+            <li>Learning about smart contract</li>
+            <li>Develop an application</li>
+        </ul>
+        
+    </div>
+
+    <div id="runsmartcontract" class="step" data-rel-x="0" data-rel-y="1000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="crisps crisps-con icecream-pro applepie-pro">
+        <h1>Run Smart Contract</h1>
+        
+        <div class="content">
+            <img src="images/write_first_app.diagram.1.png" height="400px"/>
+        </div>
+    </div>
+
+    <div id="fabcarsmartcontract" class="step" data-rel-x="0" data-rel-y="1000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="crisps crisps-con icecream-pro applepie-pro">
+        <h1>Run Example Smart Contract</h1>
+        
+        <div class="content">
+            <img src="images/RunningtheSample_w.png" height="200px"/>
+        </div>
+    </div>
+
+
+    <div id="querytheledger" class="step" data-rel-x="0" data-rel-y="1000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="crisps-pro applepie icecream-con applepie-con">
+        <h1>Querying the ledger</h1>
+
+        <div class="content">
+            <img src="images/write_first_app.diagram.2.png" height="400px"/>
+        </div>
+    </div>
+
+    <!-- Apple pie slides (3) -->
+    <div id="docker" class="step" data-x="5000" data-y="2000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="crisps-con applepie-pro crisps icecream-pro">
+        <h1>Containers</h1>
+
+        <div class="content">
+            <img src="images/docker_taxonomy.png" height="400px"/>
+        </div>
+    </div>
+
+    <div id="gitmodel" class="step" data-rel-x="0" data-rel-y="1000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="applepie applepie-con crisps-pro icecream-con">
+        <h1>Git Model</h1>
+
+        <div class="content">
+            <img src="images/git-model@2x.png" height="600px"/>
+        </div>
+    </div>
+
+    <div id="conclusion" class="step" data-rel-x="1000" data-rel-y="1000">
+        <h1>Conclusion</h1>
+
+        <p>Let's push things forward</p>
+
+        <p id="credits"
+        >Links: <a href="https://hyperledger-fabric.readthedocs.io/en/release-1.4/">Fabric 1.4</a>, 
+                        <a href="https://www.interlogica.it/category/insight/?tag=blockchain-technology/">Interlogica</a>
+                        </p>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="2000" data-scale="9" style="pointer-events: none;">
+    </div>
+</div>
+
+<div id="impress-toolbar"></div>
+
+<div class="impress-progressbar"><div></div></div>
+<div class="impress-progress"></div>
+
+<div id="impress-help"></div>
+
+<script type="text/javascript" src="impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
